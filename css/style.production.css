@@ -59,8 +59,6 @@ body{
         color: #489c79;
       }
 
-
-
 .button {
     /* overwrites browser defaults and resets the border*/
     border: none;
@@ -80,8 +78,6 @@ body{
     -o-transition: 0.2s opacity;
     transition: 0.2s opacity;
 }
-
-
 
 button {
     /* overwrites browser defaults and resets the border*/
