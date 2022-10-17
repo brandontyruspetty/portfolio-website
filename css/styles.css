@@ -22,7 +22,6 @@ DarkSlateGrey #2F4F4F */
     --sun-hundred-percent: #f76414;
     --header-font-weight: 700;
 }
-
      
 body{
         font-family: 'Ubuntu', sans-serif;
@@ -153,13 +152,23 @@ button:focus,
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
-.pager-header_item {
+.page-header_item {
     flex: 0 1 200px;
 }
 
 .page-header .page-header_item:last-child {
     flex-grow: 1;
     text-align: right;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.table-style {
+    width: 100%;
 }
 
 .navigation-list {
@@ -190,6 +199,7 @@ button:focus,
     grid-gap: 20px;
     margin: 0;
 }
+
 
 .grid_item {
     background-color: var(--grid-background);

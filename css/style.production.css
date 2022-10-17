@@ -1,23 +1,42 @@
-
 /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
-* Browsers: last 4 version
+* Browsers: last 2 version
 */
+
+
+
 
 /* Colors
 GhostWhite #F8F8FF
 Maroon #800000
 DarkSlateGrey #2F4F4F */
+
+:root {
+    --primary-button-color: #357b70;
+    --primary-button-text: white;
+    --secondary-button-color: #e0b354;
+    --secondary-button-text: #2b2b2b;
+    --primary-text: #2F4F4F;
+    --background-color: #F8F8FF;
+    --heading-one-color: #800000;
+    --visited-link: #05676e;
+    --active-link: #489c79;
+    --grid-background: lightgray;
+    --sun-zero-percent: #edc655;
+    --sun-fifty-percent: #fcffad;
+    --sun-hundred-percent: #f76414;
+    --header-font-weight: 700;
+}
      
 body{
         font-family: 'Ubuntu', sans-serif;
         font-weight: 400;
-        color: #2F4F4F; 
+        color: var(--primary-text); 
         font-size: 16px;
         font-variant: small-caps;
-        background-color: #F8F8FF;
+        background-color: var(--background-color);
         /* Sets the font size to 16px */
         line-height: 1.6;
         /* Sets the line-height to 1.6 */
@@ -25,28 +44,28 @@ body{
 
       h1 {
         font-size: 36px;
-        font-weight: 700;
-        color: #800000;
+        font-weight: var(--header-font-weight);
+        color: var(--heading-one-color);
       }
       
       h2 {
         font-size: 24px;
-        font-weight: 700;
+        font-weight: var(--header-font-weight);
     
       }
       
       h3 {
         font-size: 20px;
-        font-weight: 700;
+        font-weight: var(--header-font-weight);
 
       }
       a {
-        color: #357b70;
+        color: var(--primary-button-color);
       }
       
       a:visited {
         /*visited link*/
-        color: #05676e;
+        color: var(--visited-link);
       }
 
       a:hover, a:focus {
@@ -56,20 +75,20 @@ body{
 
       a:active {
         /* selected link */
-        color: #489c79;
+        color: var(--active-link);
       }
 
 
 
-.button {
+.button, button {
     /* overwrites browser defaults and resets the border*/
     border: none;
     display: inline-block;
     /* takes the font from the outer container*/
     font-family: inherit;
     /*styles the background color, font color, and text decoration (underline, etc.) of the button */
-    background-color: #357b70;
-    color: white;
+    background-color: var(--primary-button-color);
+    color: var(--primary-button-text);
     text-decoration: none;
     /*adds spacing to the button */
     padding: 10px;
@@ -77,29 +96,6 @@ body{
     /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
     border-bottom: 2px solid rgba (0,0,0,0.3);
     -webkit-transition: 0.2s opacity;
-    -o-transition: 0.2s opacity;
-    transition: 0.2s opacity;
-}
-
-
-
-button {
-    /* overwrites browser defaults and resets the border*/
-    border: none;
-    display: inline-block;
-    /* takes the font from the outer container*/
-    font-family: inherit;
-    /*styles the background color, font color, and text decoration (underline, etc.) of the button */
-    background-color: #357b70;
-    color: white;
-    text-decoration: none;
-    /*adds spacing to the button */
-    padding: 10px;
-    border-radius: 3px;
-    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-    border-bottom: 2px solid rgba (0,0,0,0.3);
-    -webkit-transition: 0.2s opacity;
-    -o-transition: 0.2s opacity;
     transition: 0.2s opacity;
 }   
 
@@ -114,8 +110,8 @@ button:focus,
 }
 
 .button_secondary {
-    background-color: #e0b354;
-    color: #2b2b2b;
+    background-color: var(--secondary-button-color);
+    color: var(--secondary-button-text);
 }
 .navigation-list_item--active {
     text-decoration: none;
@@ -172,7 +168,7 @@ button:focus,
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
-.pager-header_item {
+.page-header_item {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 200px;
             flex: 0 1 200px;
@@ -183,6 +179,21 @@ button:focus,
         -ms-flex-positive: 1;
             flex-grow: 1;
     text-align: right;
+}
+
+.contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 40px;
+}
+
+.table-style {
+    width: 100%;
 }
 
 .navigation-list {
@@ -216,8 +227,9 @@ button:focus,
     margin: 0;
 }
 
+
 .grid_item {
-    background-color: lightgray;
+    background-color: var(--grid-background);
     width: auto;
     min-height: auto;
     padding: 10px;
@@ -260,25 +272,25 @@ button:focus,
 
 @-webkit-keyframes color-change {
     0% {
-        fill: #edc655;
+        fill: var(--sun-zero-percent);
     }
     50% {
-        fill: #fcffad;
+        fill: var(--sun-fifty-percent);
     }
     100% {
-        fill: #f76414;
+        fill: var(--sun-hundred-percent);
     }
 }
 
 @keyframes color-change {
     0% {
-        fill: #edc655;
+        fill: var(--sun-zero-percent);
     }
     50% {
-        fill: #fcffad;
+        fill: var(--sun-fifty-percent);
     }
     100% {
-        fill: #f76414;
+        fill: var(--sun-hundred-percent);
     }
 }
 .sun {
