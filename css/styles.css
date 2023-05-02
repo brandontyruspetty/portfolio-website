@@ -258,13 +258,6 @@ button:focus,
     padding: 40px;
 }
 
-#table-style {
-  background-color: var(--black);
-  text-align: center;
-  width: 90%;
-  margin-bottom: 1.15em;
-}
-
 .navigation-list {
     list-style-type: none;
 }
@@ -373,4 +366,36 @@ button:focus,
 
 .cloud-back {
     animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.table {
+  width: 800px;
+  margin-top: 80px;
+  font-size: 18px;
+
+}
+.table-style {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th,
+td {
+  padding: 16px 24px;
+  text-align: center;
+  color: #000
+}
+
+thead th {
+  background-color: #e0218a;
+  color: #fff;
+  width: 25%;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #e9ecef;
 }
