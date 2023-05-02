@@ -90,6 +90,38 @@ span {
         background-color: var(--black-alpha0);
       }
 
+      .flex-row {
+        display: flex;
+        flex-flow: row wrap;
+      }
+      
+      .flex-column {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .text-center {
+        text-align: center;
+      }
+      
+      .justify-center {
+        justify-content: center;
+      }
+      
+      .align-center {
+        align-items: center;
+      }
+      
+      .space-between {
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .space-evenly {
+        display: flex;
+        justify-content: space-evenly;
+      }
+
       .img-box img {
         background-color: #000;
         object-fit: cover;
