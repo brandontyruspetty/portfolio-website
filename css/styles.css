@@ -150,7 +150,7 @@ span {
       .img-box img {
         background-color: #000;
         object-fit: cover;
-        width: 100%;
+        width: 50%;
         height: auto;
       }
 
