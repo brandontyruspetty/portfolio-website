@@ -187,7 +187,10 @@ button:focus,
 }
 
 .table-style {
-    width: 100%;
+  background-color: var(--black);
+  text-align: center;
+  width: 90%;
+  margin-bottom: 1.15em;
 }
 
 .navigation-list {
