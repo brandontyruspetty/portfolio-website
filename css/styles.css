@@ -96,7 +96,18 @@ span {
         width: 100%;
         height: auto;
       }
-
+      .grid__item > .img-box {
+        padding: 1px;
+        margin-bottom: 0;
+        border-radius: inherit;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        height: 20rem;
+        background-color: #444;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+      }
 
 .button, button {
     /* overwrites browser defaults and resets the border*/
