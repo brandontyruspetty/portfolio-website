@@ -258,7 +258,7 @@ button:focus,
     padding: 40px;
 }
 
-.table-style {
+#table-style {
   background-color: var(--black);
   text-align: center;
   width: 90%;
