@@ -122,6 +122,10 @@ span {
         justify-content: space-evenly;
       }
 
+      .grid {
+        display: flex;
+      }
+
       .grid__item {
         background-color: hsl(0, 0%, 88%);
         border: 1px solid #999;
