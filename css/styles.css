@@ -180,7 +180,11 @@ span {
     /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
     border-bottom: 2px solid rgba (0,0,0,0.3);
     transition: 0.2s opacity;
-}   
+} 
+
+.svg-container {
+  width: 400px;
+}
 
 button:hover, 
 button:focus,
