@@ -191,6 +191,10 @@ span {
   margin-bottom: 20px;
 }
 
+.img-container {
+  width: 100px;
+}
+
 button:hover, 
 button:focus,
 .button:hover,
